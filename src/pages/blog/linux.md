@@ -1,6 +1,6 @@
 ---
 templateKey: blog-post
-title: How to do your part in the world of Zelda
+title: The Nextjs bugs that can cause your projects to fail when deployed
 date: 2021-12-22T15:04:10.000Z
 featuredpost: true
 featuredimage: /img/image1.png
@@ -9,7 +9,7 @@ tags:
   - flavor
   - tasting
 ---
-![flavor wheel](/img/flavor_wheel.jpg)
+<!-- ![flavor wheel](/img/flavor_wheel.jpg) -->
 
 lorem ipsum is the new thing.
 While this is going to be a big change for professional coffee tasters, it means a lot to you as a consumer as well. We’ll explain how the wheel came to be, how pros use it and what the flavors actually mean.

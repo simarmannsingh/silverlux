@@ -1,9 +1,9 @@
 ---
 templateKey: 'blog-post'
-title: 'chhole has once again won the Oscar under Best cuisine catergory.'
+title: 'Chhole has once again won the Oscar under Best cuisine catergory.'
 date: 2017-01-04T15:04:10.000Z
 featuredpost: false
-featuredimage: /img/image6.png
+featuredimage: /img/products-full-width.jpg
 description: >-
   We’re proud to announce that we’ll be offering a small batch of Jamaica Blue
   Mountain coffee beans in our store next week.

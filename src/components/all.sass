@@ -1,6 +1,6 @@
 @import "~bulma/sass/utilities/initial-variables"
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Poiret+One&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
 @import "~bulma"
 
 // Config vars
@@ -13,8 +13,118 @@ $primary-invert: $kaldi-red-invert
 $body-color: #333
 $black: #2b2523
 
+//========================================
+// ------------- Utilities ---------------
+//========================================
+.container
+  max-width: 1100px;
+  margin: 0 auto;
+  overflow: auto;  
+  flex-grow: 0
+.flex
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  height: 100%;
+  width: 100%
+.flex-col
+  flex-direction: column
+.flex-col-around
+  flex-direction: column
+  justify-content: space-around
+.flex-around
+  justify-content: space-around
+.grid
+  display: grid !important
+  grid-template-columns: repeat(2, 1fr);  
+  justify-content: center;
+  height: 100%;
+  gap: 4em 5em
+.grid-3
+  grid-template-columns: repeat(3, 1fr);
+
+.card
+  background-color: #fff;
+  color: #333;
+  border-radius: 10px;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+  padding: 20px;
+  margin: 10px;
+
+// .btn
+//   display: inline-block;
+//   padding: 10px 30px;
+//   cursor: pointer;
+//   background: var(--primary-color);
+//   color: #fff;
+//   border: none;
+//   border-radius: 5px;
+
+// .btn:hover
+//   transform: scale(.98);
+
+// .btn-outline
+//   background-color: transparent;
+//   border: 1px #fff solid;
+
+.center
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+
+//========================================
+//-------------- Margins -----------------
+//========================================
+.my-1   
+  margin: 1rem 0 !important   
+.my-2   
+  margin: 1.5rem 0 !important 
+.my-3   
+  margin: 2rem 0 !important 
+.my-4   
+  margin: 3rem 0 !important 
+.my-5   
+  margin: 4rem 0 !important 
+
+.m-1   
+  margin: 1rem !important   
+.m-2   
+  margin: 1.5rem !important 
+.m-3   
+  margin: 2rem !important 
+.m-4   
+  margin: 3rem !important 
+.m-5   
+  margin: 4rem !important 
+
+.py-1   
+  padding: 1rem 0 !important   
+.py-2   
+  padding: 1.5rem 0 !important 
+.py-3   
+  padding: 2rem 0 !important 
+.py-4   
+  padding: 3rem 0 !important 
+.py-5   
+  padding: 4rem 0 !important 
+
+.p-1   
+  padding: 1rem !important   
+.p-2   
+  padding: 1.5rem !important 
+.p-3   
+  padding: 2rem !important 
+.p-4   
+  padding: 3rem !important 
+.p-5   
+  padding: 4rem !important
+
+//========================================
+// -------- Main classes -----------------
+//========================================
 html, body  
   font-family: 'Open Sans'
+
 
 .navbar
   box-shadow:none !important
@@ -44,8 +154,9 @@ h1
 .section
   padding: 2rem 1.5rem !important
 
-
-// Helper Classes
+//========================================
+// -------- Bulma Helper Classes ---------
+//========================================
 .full-width-image-container
   width: 100vw
   height: 400px
@@ -101,7 +212,9 @@ footer.footer
   padding: 3rem 0rem 0rem
   background-color: transparent
 
-//Menu overrides
+//========================================
+//------------ Menu overrides-------------
+//========================================
 $menu-item-color: $white-ter
 $menu-item-hover-color: $black !important
 $menu-item-hover-background-color: $black
@@ -135,30 +248,59 @@ $menu-label-color: $white-ter
 .featured-thumbnail
   width: 100%
 
-// blog roll
+//========================================
+// ---------- blog roll ------------------
+//========================================
 .blog-list-item    
     height: fit-content
+
 .blog-list-item.is-featured
   background-color: #ddd
+
 .blog-list-item header
   display: flex;  
+
 .blog-list-item .featured-thumbnail
   flex-basis: 35%;
+
 .blogRollTitle  
   color: #141414 !important
   font-size: 1.22em !important
-  font-weight: 600 !important  
+  font-weight: 600 !important
+
 .blogRollDate
   margin: 1em 0 !important
   font-size: 0.85em
   text-decoration: underline
   font-style: italic 
+
 .blogRollExcerpt
   margin-top: 0em !important
   margin-bottom: 0.7em !important
-  overflow: hidden  
+  overflow: hidden
+
+// .blogPostContent:not(:nth-child(1))
+//   width: 50vw
+//   margin: 0.3em auto
+
+// .blogPostContent p:nth-child(1)    
+//   width: 100vw !important
+//   margin: 0 !important
+//   margin-left: -50% !important
+
+.blogPostFeatureImage
+  height: 40em !important
+  width: 100vw !important
+  object-fit: cover
+
+.blogContainer
+  width: 65vw
+  margin: 1em auto
+  position: relative
+
 .is-featured
   background: white !important
+
 .recent-posts
   color: #848383 !important
 
@@ -169,107 +311,12 @@ $menu-label-color: $white-ter
   outline: none
   border: 1px solid #9c9b9b
   text-align: center
-// Utilities 
-.container
-  max-width: 1400px;
-  margin: 0 auto;
-  overflow: auto;  
 
-.flex
-  display: flex;
-  justify-content: center;
-  align-items: flex-start;
-  height: 100%;
-  width: 100%
-.flex-col-around
-  flex-direction: column
-  justify-content: space-around
-.flex-around
-  justify-content: space-around
-.grid
-  display: grid !important
-  grid-template-columns: repeat(2, 1fr);  
-  justify-content: center;
-  height: 100%;
-  gap: 4em 5em
-.grid-3
-  grid-template-columns: repeat(3, 1fr);
-
-.card
-  background-color: #fff;
-  color: #333;
-  border-radius: 10px;
-  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
-  padding: 20px;
-  margin: 10px;
-
-// .btn
-//   display: inline-block;
-//   padding: 10px 30px;
-//   cursor: pointer;
-//   background: var(--primary-color);
-//   color: #fff;
-//   border: none;
-//   border-radius: 5px;
-
-// .btn:hover
-//   transform: scale(.98);
-
-// .btn-outline
-//   background-color: transparent;
-//   border: 1px #fff solid;
-
-.center
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-
-// Margins 
-.my-1   
-  margin: 1rem 0 !important   
-.my-2   
-  margin: 1.5rem 0 !important 
-.my-3   
-  margin: 2rem 0 !important 
-.my-4   
-  margin: 3rem 0 !important 
-.my-5   
-  margin: 4rem 0 !important 
-
-.m-1   
-  margin: 1rem !important   
-.m-2   
-  margin: 1.5rem !important 
-.m-3   
-  margin: 2rem !important 
-.m-4   
-  margin: 3rem !important 
-.m-5   
-  margin: 4rem !important 
-
-.py-1   
-  padding: 1rem 0 !important   
-.py-2   
-  padding: 1.5rem 0 !important 
-.py-3   
-  padding: 2rem 0 !important 
-.py-4   
-  padding: 3rem 0 !important 
-.py-5   
-  padding: 4rem 0 !important 
-
-.p-1   
-  padding: 1rem !important   
-.p-2   
-  padding: 1.5rem !important 
-.p-3   
-  padding: 2rem !important 
-.p-4   
-  padding: 3rem !important 
-.p-5   
-  padding: 4rem !important 
-
-// responsiveness
+  
+ 
+//========================================
+//------------ responsiveness ------------
+//========================================
 +tablet-only
   .blog-list-item .featured-thumbnail
     flex-basis: 50%;

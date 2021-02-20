@@ -6,4 +6,6 @@ node_modules
 public/
 static/admin/*.bundle.*
 .DS_Store
+
 yarn-error.log
+npm-debug.log

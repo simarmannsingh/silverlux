@@ -7,6 +7,7 @@ import Layout from '../components/Layout'
 import Content, { HTMLContent } from '../components/Content'
 
 export const BlogPostTemplate = ({
+  image,
   content,
   contentComponent,
   description,
@@ -15,18 +16,29 @@ export const BlogPostTemplate = ({
   helmet,
 }) => {
   const PostContent = contentComponent || Content
-
+  const PostImage = image.childImageSharp.fluid.src
+  console.log(PostImage);
   return (
-    <section className="section">
+    <section>
       {helmet || ''}
-      <div className="container content">
-        <div className="columns">
-          <div className="column is-10 is-offset-1">
-            <h1 className="title is-size-2 has-text-weight-bold is-bold-light">
+      <div className="content">
+        <div className="flex flex-col">
+          <div className="flex flex-col-around"
+              >
+                
+            <img src={PostImage} className="blogPostFeatureImage" style={{width:'100vw'}} alt="dummy text"></img>
+
+            <div className="blogContainer">
+            <h1
+                style={{fontFamily:'Poppins, sans-serif', fontWeight:'700' }}>
               {title}
             </h1>
+            <p>Posted by <span>Simar Mann Singh</span> on  </p>
+
             <p>{description}</p>
-            <PostContent content={content} />
+
+            <PostContent className="blogPostContent" content={content} />
+            
             {tags && tags.length ? (
               <div style={{ marginTop: `4rem` }}>
                 <h4>Tags</h4>
@@ -39,6 +51,8 @@ export const BlogPostTemplate = ({
                 </ul>
               </div>
             ) : null}
+            </div>
+
           </div>
         </div>
       </div>
@@ -46,7 +60,8 @@ export const BlogPostTemplate = ({
   )
 }
 
-BlogPostTemplate.propTypes = {
+BlogPostTemplate.propTypes = {  
+  image: PropTypes.oneOfType([PropTypes.object, PropTypes.string]),
   content: PropTypes.node.isRequired,
   contentComponent: PropTypes.func,
   description: PropTypes.string,
@@ -55,12 +70,12 @@ BlogPostTemplate.propTypes = {
 }
 
 const BlogPost = ({ data }) => {
-  const { markdownRemark: post } = data
-
+  const { markdownRemark: post } = data    
   return (
     <Layout>
       <BlogPostTemplate
         content={post.html}
+        image={post.frontmatter.featuredimage}
         contentComponent={HTMLContent}
         description={post.frontmatter.description}
         helmet={
@@ -93,9 +108,17 @@ export const pageQuery = graphql`
       id
       html
       frontmatter {
-        date(formatString: "MMMM DD, YYYY")
+        date(formatString: "DD MMM, YYYY")
         title
         description
+        featuredimage{
+          childImageSharp {
+            fluid(maxWidth: 1024, quality: 50) {
+              ...GatsbyImageSharpFluid
+            }
+            id : id
+          }
+        }
         tags
       }
     }
