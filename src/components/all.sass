@@ -264,7 +264,7 @@ $menu-label-color: $white-ter
   flex-basis: 35%;
 
 .blogRollTitle  
-  color: #141414 !important
+  color: #000000 !important
   font-size: 1.22em !important
   font-weight: 600 !important
 
@@ -279,6 +279,18 @@ $menu-label-color: $white-ter
   margin-bottom: 0.7em !important
   overflow: hidden
 
+.blogPostDescription
+  margin-top: 0.5em
+  color: #454746 !important 
+
+.blogPostedDetails
+  font-style: italic !important
+  font-family: 'Poppins' !important
+  font-size: 0.9em  
+
+.blogPostAuthor, .blogPostDate
+  text-decoration: underline !important
+
 // .blogPostContent:not(:nth-child(1))
 //   width: 50vw
 //   margin: 0.3em auto
@@ -288,16 +300,61 @@ $menu-label-color: $white-ter
 //   margin: 0 !important
 //   margin-left: -50% !important
 
+.line
+  width: 100% !important
+  height: 1px
+  background: #141414 !important
+  margin: 1em auto !important
+
 .blogPostFeatureImage
-  height: 40em !important
+  height: 30em !important
   width: 100vw !important
   object-fit: cover
 
-.blogContainer
-  width: 65vw
-  margin: 1em auto
+.blogContainer, .blogPostContentsContainer
+  width: 80vw
+  margin: 4em auto
   position: relative
 
+.blogPostContentsContainer
+  width: 50vw
+
+.blogPostContentsContainer h1, 
+.blogPostContentsContainer h2,
+.blogPostContentsContainer h3, 
+.blogPostContentsContainer h4,
+.blogPostContentsContainer h5,
+.blogPostContentsContainer h6, 
+.blogPostContentsContainer p, 
+.blogPostContentsContainer ul, 
+.blogPostContentsContainer span
+  color: #000 !important
+  font-family: 'Poppins'
+  position: relative
+  width: fit-content
+  margin-top: 1em
+
+.blogPostContentsContainer h1::after,
+.blogPostContentsContainer h2::after,
+.blogPostContentsContainer h3::after,
+.blogPostContentsContainer h4::after
+  position: absolute
+  margin-top: -0.45em
+  margin-left: -10px
+  display: block
+  width: 107%
+  height: 0.5em
+  background: #EFF239  
+  content: ''
+  z-index: -1
+  border-bottom: 2px solid #ddd
+
+.blogPostContentsContainer h2::after
+  background: #a5f1b1
+  
+.blogPostContentsContainer h3::after 
+  background: #9cf5f0 
+  
 .is-featured
   background: white !important
 

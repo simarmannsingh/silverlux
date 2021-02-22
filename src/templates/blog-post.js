@@ -12,6 +12,7 @@ export const BlogPostTemplate = ({
   contentComponent,
   description,
   tags,
+  date,
   title,
   helmet,
 }) => {
@@ -30,39 +31,44 @@ export const BlogPostTemplate = ({
 
             <div className="blogContainer">
             <h1
-                style={{fontFamily:'Poppins, sans-serif', fontWeight:'700' }}>
+                style={{fontFamily:'Poppins, sans-serif', color:'#000', fontWeight:'700', fontSize: '2.8rem' }}>
               {title}
             </h1>
-            <p>Posted by <span>Simar Mann Singh</span> on  </p>
-
-            <p>{description}</p>
-
-            <PostContent className="blogPostContent" content={content} />
+            <p className="blogPostDescription">{description}</p>
             
-            {tags && tags.length ? (
-              <div style={{ marginTop: `4rem` }}>
-                <h4>Tags</h4>
-                <ul className="taglist">
-                  {tags.map((tag) => (
-                    <li key={tag + `tag`}>
-                      <Link to={`/tags/${kebabCase(tag)}/`}>{tag}</Link>
-                    </li>
-                  ))}
-                </ul>
-              </div>
-            ) : null}
-            </div>
+            <p className="blogPostedDetails">Posted by <span className="blogPostAuthor">Simar Mann Singh</span> on <span className="blogPostDate">{date}</span>  </p>
 
+            <div className="line"></div>
+
+            <div className="blogPostContentsContainer">
+              <PostContent className="blogPostContent" content={content} />
+              
+              {tags && tags.length ? (
+                <div style={{ marginTop: `4rem` }}>
+                  <h4>Tags</h4>
+                  <ul className="taglist">
+                    {tags.map((tag) => (
+                      <li key={tag + `tag`}>
+                        <Link to={`/tags/${kebabCase(tag)}/`}>{tag}</Link>
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+              ) : null}
+
+            </div>
           </div>
         </div>
       </div>
-    </section>
-  )
+    </div>
+  </section>
+)
 }
 
 BlogPostTemplate.propTypes = {  
   image: PropTypes.oneOfType([PropTypes.object, PropTypes.string]),
   content: PropTypes.node.isRequired,
+  date : PropTypes.string,
   contentComponent: PropTypes.func,
   description: PropTypes.string,
   title: PropTypes.string,
@@ -77,6 +83,7 @@ const BlogPost = ({ data }) => {
         content={post.html}
         image={post.frontmatter.featuredimage}
         contentComponent={HTMLContent}
+        date={post.frontmatter.date}
         description={post.frontmatter.description}
         helmet={
           <Helmet titleTemplate="%s | Blog">

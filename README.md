@@ -2,14 +2,19 @@
 
 [![Netlify Status](https://api.netlify.com/api/v1/badges/b654c94e-08a6-4b79-b443-7837581b1d8d/deploy-status)](https://app.netlify.com/sites/gatsby-starter-netlify-cms-ci/deploys) [![Contributor Covenant](https://img.shields.io/badge/Contributor%20Covenant-2.0-4baaaa.svg)](code_of_conduct.md)
 
-![Screenshot](https://github.com/simarmannsingh/gatsby-netlifycms-starter-template/blob/master/src/img/gatsbyBasedBlog.png)
+![Screenshot](https://github.com/simarmannsingh/gatsby-netlifycms-starter-template/blob/master/src/img/gatsbynetlifyBlog.png)
 
 This is a public repo that contains a [Gatsby](https://www.gatsbyjs.org/) based template website which can be easily hosted on any platform. This website uses the [Netlify CMS](https://www.netlifycms.org) as its content management system.
 
 It follows the [JAMstack architecture](https://jamstack.org) by using Git as a single source of truth, and [Netlify](https://www.netlify.com) for continuous deployment, and CDN distribution. Surely you can use a different host. Netlify CMS and Netlify are two different products and not to be confused as one dependent on another. You are free to use both in combination and separately as well.
 
-**Note:** This starter template is a customized version of the template that can be found on [Netlify CMS](https://www.netlifycms.org/) website and uses [Gatsby v2](https://www.gatsbyjs.org/blog/2018-09-17-gatsby-v2/).
+**Note:** This starter template is a customized version of the original template by Netlify that can be found on [Netlify CMS](https://www.netlifycms.org/) website and uses [Gatsby v2](https://www.gatsbyjs.org/blog/2018-09-17-gatsby-v2/). It is an Open-source project, however, the licence is yet to be decided and hence poeple are discouraged to use it. You can use it for your project ONLY if you are willing to pay the licence fee.
 
+Also, this project is not yet finished. Different vulnerabilities may exist and hence usage is production is discouraged. Use at your own risk.
+
+### A Screenshot of the Blog Post.
+
+![Screenshot](https://github.com/simarmannsingh/gatsby-netlifycms-starter-template/blob/master/src/img/gatsbyBasedBlog_blogPost.png)
 
 ## Features
 
