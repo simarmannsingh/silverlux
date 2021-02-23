@@ -19,6 +19,7 @@ export const BlogPostTemplate = ({
   const PostContent = contentComponent || Content
   const PostImage = image.childImageSharp.fluid.src
   console.log(PostImage);
+  scrollToBlog()
   return (
     <section>
       {helmet || ''}
@@ -29,7 +30,7 @@ export const BlogPostTemplate = ({
                 
             <img src={PostImage} className="blogPostFeatureImage" style={{width:'100vw'}} alt="dummy text"></img>
 
-            <div className="blogContainer">
+            <div className="blogContainer" >
             <h1
                 style={{fontFamily:'Poppins, sans-serif', color:'#000', fontWeight:'700', fontSize: '2.8rem' }}>
               {title}
@@ -63,6 +64,10 @@ export const BlogPostTemplate = ({
     </div>
   </section>
 )
+}
+
+const scrollToBlog = () => {  
+  window.scrollTo({top:400, behavior:"smooth"})
 }
 
 BlogPostTemplate.propTypes = {  

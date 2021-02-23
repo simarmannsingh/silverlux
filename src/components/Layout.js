@@ -3,11 +3,17 @@ import { Helmet } from 'react-helmet'
 import Footer from '../components/Footer'
 import Navbar from '../components/Navbar'
 import './all.sass'
+
 import useSiteMetadata from './SiteMetadata'
 import { withPrefix } from 'gatsby'
+// import ScrollToTop from './ScrollToTop'
+
+
 
 const TemplateWrapper = ({ children }) => {
+  
   const { title, description } = useSiteMetadata()
+  
   return (
     <div>
       <Helmet>
@@ -50,9 +56,16 @@ const TemplateWrapper = ({ children }) => {
       </Helmet>
       <Navbar />
       <div>{children}</div>
+      
+      {/* <ScrollToTop /> */}
+      <button className="scroll-to-top" id="scrolltotop" onClick={scrollToTop} ></button>
       <Footer />
     </div>
   )
+}
+
+const scrollToTop = () => {  
+  window.scrollTo({top:0, behavior:"smooth"})    
 }
 
 export default TemplateWrapper

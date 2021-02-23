@@ -1,6 +1,6 @@
 @import "~bulma/sass/utilities/initial-variables"
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Poiret+One&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Poiret+One&display=swap')
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap')
 @import "~bulma"
 
 // Config vars
@@ -47,10 +47,12 @@ $black: #2b2523
   background-color: #fff;
   color: #333;
   border-radius: 10px;
-  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 3px 8px rgba(104, 104, 104, 0.2);
   padding: 20px;
   margin: 10px;
 
+.card:hover
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
 // .btn
 //   display: inline-block;
 //   padding: 10px 30px;
@@ -67,10 +69,28 @@ $black: #2b2523
 //   background-color: transparent;
 //   border: 1px #fff solid;
 
+// blockquote
+//   position: relative !important
+
+// blockquote::before 
+//   content: url('../img/quote-left-solid.svg') !important
+//   background: #111 !important
+//   width: 1em !important
+//   font-size: 1em
+//   height: 1em !important
+//   position: absolute !important
+//   padding: 7px
+//   justify-content: center
+//   align-items: center
+//   opacity: 0.35
+//   border-radius: 35%
+//   right: 1em
+//   bottom: 1em
+
 .center
-  justify-content: center;
-  align-items: center;
-  text-align: center;
+  justify-content: center !important
+  align-items: center !important
+  text-align: center !important
 
 //========================================
 //-------------- Margins -----------------
@@ -124,7 +144,6 @@ $black: #2b2523
 //========================================
 html, body  
   font-family: 'Open Sans'
-
 
 .navbar
   box-shadow:none !important
@@ -186,7 +205,8 @@ h1
     font-size: 1rem
     line-height: 1.25
     background-color: #fff
-    border-radius: .25rem
+    margin-top: 0
+    // border-radius: .25rem
     text-decoration: none
     font-weight: 700
     color: #CC3700
@@ -246,8 +266,8 @@ $menu-label-color: $white-ter
     display: inline
 
 .featured-thumbnail
-  width: 100%
-
+  width: 100% !important
+  height: 2em !important
 //========================================
 // ---------- blog roll ------------------
 //========================================
@@ -269,7 +289,7 @@ $menu-label-color: $white-ter
   font-weight: 600 !important
 
 .blogRollDate
-  margin: 1em 0 !important
+  margin: 0.65em 0 !important
   font-size: 0.85em
   text-decoration: underline
   font-style: italic 
@@ -291,10 +311,24 @@ $menu-label-color: $white-ter
 .blogPostAuthor, .blogPostDate
   text-decoration: underline !important
 
-// .blogPostContent:not(:nth-child(1))
-//   width: 50vw
-//   margin: 0.3em auto
+.scroll-to-top::before
+  content: url('../img/chevron-up-solid.svg')
+  padding: 7px
+  justify-content: center
+  align-items: center
+  opacity: 0.35
+  background: #ddd
+  border-radius: 35%
+  width: 2.3em
+  height: 2.3em
+  position: fixed
+  right: 1em
+  bottom: 1em
+  cursor: pointer
 
+.scroll-to-top:hover::before
+  padding: 7px
+  opacity: 0.8
 // .blogPostContent p:nth-child(1)    
 //   width: 100vw !important
 //   margin: 0 !important
