@@ -67,7 +67,10 @@ export const BlogPostTemplate = ({
 }
 
 const scrollToBlog = () => {  
-  window.scrollTo({top:400, behavior:"smooth"})
+  if(typeof window !== 'undefined')
+  {
+    window.scrollTo({top:400, behavior:"smooth"})
+  }
 }
 
 BlogPostTemplate.propTypes = {  
