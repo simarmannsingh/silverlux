@@ -3,7 +3,7 @@ templateKey: blog-post
 title: The Nextjs bugs that can cause your projects to fail when deployed
 date: 2021-12-22T15:04:10.000Z
 featuredpost: true
-featuredimage: /img/image1.png
+featuredimage: /img/home-jumbotron.jpg
 description: A Brand new bug that can crash everything.
 tags:
   - flavor

@@ -26,24 +26,22 @@ export const IndexPageTemplate = ({
       //   backgroundAttachment: ` `,
       // }}
     >
-      <div
-        style={{
-          display: 'flex',
-          flexDirection: 'column',
-          height: '200px',
-          margin: '3em',
-          lineHeight: '1',
-          justifyContent: 'space-around',
-          alignItems: 'center',
-        }}
-      >
+      <div className="main-heading" 
+      style={{
+        display: 'flex', 
+        flexDirection: 'column', 
+        height: '200px', 
+        margin: '3em', 
+        lineHeight: '1', 
+        justifyContent: 'space-around', 
+        alignItems: 'center'
+      }}>
        
         <h1
-          className="has-text-weight-bold is-size-3-mobile is-size-2-tablet is-size-1-widescreen"
-          style={{            
+          className="has-text-weight-bold is-size-3-mobile is-size-2-tablet is-size-1-widescreen" style={{
             color: 'black',
             lineHeight: '1',
-            padding: '0.25em',
+            padding: '0.25em'
           }}
         >
           {title}

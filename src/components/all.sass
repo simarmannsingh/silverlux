@@ -1,6 +1,9 @@
 @import "~bulma/sass/utilities/initial-variables"
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Poiret+One&display=swap')
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&family=Poiret+One&display=swap');
+
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap')
+
 @import "~bulma"
 
 // Config vars
@@ -245,7 +248,7 @@ $menu-label-color: $white-ter
 
 .logo
   font-size: 1.5rem;
-  font-weight: 800;
+  font-weight: 900 !important 
   color: $black;
 .menu-label
   font-size: 1em !important
@@ -269,7 +272,7 @@ $menu-label-color: $white-ter
   width: 100% !important
   height: 2em !important
 //========================================
-// ---------- blog roll ------------------
+// ---------- user classes ---------------
 //========================================
 .blog-list-item    
     height: fit-content
@@ -361,9 +364,10 @@ $menu-label-color: $white-ter
 .blogPostContentsContainer h6, 
 .blogPostContentsContainer p, 
 .blogPostContentsContainer ul, 
+.blogPostContentsContainer ol, 
 .blogPostContentsContainer span
   color: #000 !important
-  font-family: 'Poppins'
+  font-family: 'Poppins' !important
   position: relative
   width: fit-content
   margin-top: 1em
@@ -408,14 +412,37 @@ $menu-label-color: $white-ter
 //========================================
 //------------ responsiveness ------------
 //========================================
-+tablet-only
+@media (max-width: 768px)
   .blog-list-item .featured-thumbnail
     flex-basis: 50%;
-
-+mobile
+  .grid-3
+    grid-template-columns: repeat(2, 1fr) !important 
+  .blogContainer
+    font-size: 0.85em !important
+  .blogPostContentsContainer
+    width: 65vw !important
+@media (max-width: 500px)
+  .main-heading
+    margin: 0 !important
+    text-align: center !important
+  .search-box
+    width: 50vw
   .blog-list-item header
     display: block
   .blog-list-item .featured-thumbnail
     text-align: center;
-    max-width: 70%;
-    margin: 0 0 1em;
+    max-width: 100%;
+    margin: 0 0 1em;  
+  .grid-3
+    grid-template-columns: 1fr !important    
+  .section
+    padding: 1rem !important
+  .featured-thumbnail
+    height: fit-content !important
+  .blogContainer
+    font-size: 0.8em !important
+    width: 85vw !important
+    margin: 2em auto !important
+  .blogPostContentsContainer
+    width: 75vw !important
+    text-align: justify

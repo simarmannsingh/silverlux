@@ -8,8 +8,6 @@ import useSiteMetadata from './SiteMetadata'
 import { withPrefix } from 'gatsby'
 import ScrollToTop from './ScrollToTop'
 
-
-
 const TemplateWrapper = ({ children }) => {
   
   const { title, description } = useSiteMetadata()
@@ -54,21 +52,16 @@ const TemplateWrapper = ({ children }) => {
           content={`${withPrefix('/')}img/og-image.jpg`}
         />
       </Helmet>
+
       <Navbar />
+      
       <div>{children}</div>
       
       <ScrollToTop />
-      <button className="scroll-to-top" id="scrolltotop" onClick={scrollToTop} ></button>
+
       <Footer />
     </div>
   )
-}
-
-const scrollToTop = () => {  
-  if(typeof window !== 'undefined')
-  {
-    window.scrollTo({top:0, behavior:"smooth"})
-  }
 }
 
 export default TemplateWrapper
