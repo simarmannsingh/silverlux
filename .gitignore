@@ -9,3 +9,5 @@ static/admin/*.bundle.*
 
 yarn-error.log
 npm-debug.log
+yarn.lock
+package-lock.json

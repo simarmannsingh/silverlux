@@ -232,7 +232,7 @@ h1
 .navbar-brand .navbar-item.logo
   padding: 0 1rem
 footer.footer
-  padding: 3rem 0rem 0rem
+  padding: 2rem 0rem 0rem
   background-color: transparent
 
 //========================================
@@ -250,6 +250,10 @@ $menu-label-color: $white-ter
   font-size: 1.5rem;
   font-weight: 900 !important 
   color: $black;
+  justify-content: space-between
+  
+.logo h1
+  margin-right: 15px  
 .menu-label
   font-size: 1em !important
   text-align: left
@@ -406,13 +410,12 @@ $menu-label-color: $white-ter
   outline: none
   border: 1px solid #9c9b9b
   text-align: center
-
   
  
 //========================================
 //------------ responsiveness ------------
 //========================================
-@media (max-width: 768px)
+@media (max-width: 800px)
   .blog-list-item .featured-thumbnail
     flex-basis: 50%;
   .grid-3

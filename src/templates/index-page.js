@@ -57,7 +57,7 @@ export const IndexPageTemplate = ({
           {subheading}
         </h3>
 
-        <input type="text" className="search-box" placeholder="Enter search term"></input>
+        <input type="text" className="search-box" placeholder="Search something"></input>
 
       </div>
     </div>
