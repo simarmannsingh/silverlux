@@ -39,11 +39,11 @@ const Navbar = class extends React.Component {
         aria-label="main-navigation"
       >
         <div className="container flex-around">
-          <div className="navbar-brand">
-            <Link to="/" className="navbar-item logo" title="Logo">
+          <div className="navbar-brand logo">
+            <Link to="/" className="navbar-item" title="Logo">
               <h1>Brand | Logo</h1>
-              <GitHubButton href="https://github.com/simarmannsingh">Follow</GitHubButton>
             </Link>
+              <GitHubButton href="https://github.com/simarmannsingh">Follow</GitHubButton>
             {/* Hamburger menu */}
             <div
               className={`navbar-burger burger ${this.state.navBarActiveClass}`}
@@ -70,10 +70,10 @@ const Navbar = class extends React.Component {
                 Products
               </Link>
               <Link className="navbar-item" to="/blog">
-                Photos
+                Blog
               </Link>
               <Link className="navbar-item" to="/contact">
-                Portfolio
+                Contact
               </Link>
               <Link className="navbar-item" to="/contact/examples">
                 Form Examples
