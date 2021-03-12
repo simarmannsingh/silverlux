@@ -253,14 +253,15 @@ $menu-label-color: $white-ter
 
 .logo
   font-size: 1.5rem;
-  font-weight: 900 !important 
-  color: $black;
   display: flex
   justify-content: space-between
   align-items: center
   
 .logo h1
-  margin-right: 15px  
+  margin-right: 15px
+  font-weight: 700 !important 
+  color: $black;
+  
 .menu-label
   font-size: 1em !important
   text-align: left
@@ -382,7 +383,12 @@ $menu-label-color: $white-ter
   position: relative
   width: fit-content
   margin-top: 1em
-
+.blogPostContentsContainer p
+  text-align: justify
+  width: 100% !important
+.blogPostContentsContainer p img
+  margin: 1.5em auto !important
+  width: 100em
 .blogPostContentsContainer h1::after,
 .blogPostContentsContainer h2::after,
 .blogPostContentsContainer h3::after,

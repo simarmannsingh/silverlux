@@ -82,7 +82,7 @@ export default () => (
         ) {
           edges {
             node {
-              excerpt(pruneLength: 600)
+              excerpt(pruneLength: 100)
               id
               fields {
                 slug
@@ -94,7 +94,7 @@ export default () => (
                 featuredpost
                 featuredimage {
                   childImageSharp {
-                    fluid(maxWidth: 120, quality: 100) {
+                    fluid(maxWidth: 1024, quality: 100) {
                       ...GatsbyImageSharpFluid
                     }
                   }

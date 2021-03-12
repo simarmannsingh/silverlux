@@ -18,9 +18,16 @@ const ScrollToTop  = () => {
 
 const scrollToBlogPost = ( pathname) =>
 {
-    if(typeof window !== 'undefined' && pathname.includes('/blog'))
+    if(typeof window !== 'undefined')
     {           
-        window.scrollTo({top:400, behavior:"smooth"})
+        if( pathname == '/blog')
+        {
+            window.scrollTo({top:130, behavior:"smooth"})
+        }
+        else if( pathname.includes('/blog'))
+        {           
+            window.scrollTo({top:400, behavior:"smooth"})
+        }
     }
 }
 

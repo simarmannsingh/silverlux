@@ -34,7 +34,7 @@ Also, this project is not yet finished. Different vulnerabilities may exist and 
 
 ## Prerequisites
 
-- Node (The developers of this template recommend using v8.2.0 or higher, but I've tested it works with v6.14.4 as well if you are deploying on Netlify. A blog post is written here on how to deploy to Netlify)
+- Node (v8.2.0 or higher)
 - [Gatsby CLI](https://www.gatsbyjs.org/docs/)
 - [Netlify CLI](https://github.com/netlify/cli)
 

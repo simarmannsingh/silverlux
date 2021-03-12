@@ -7,22 +7,19 @@ export default class BlogIndexPage extends React.Component {
   render() {
     return (
       <Layout>
-        <div
-          className="full-width-image-container margin-top-0"
+         <div
+          className="center margin-top-2"
           style={{
-            backgroundImage: `url('/img/blog-index.jpg')`,
+            marginTop: '5em'
           }}
         >
           <h1
             className="has-text-weight-bold is-size-1"
             style={{
-              boxShadow: '0.5rem 0 0 #f40, -0.5rem 0 0 #f40',
-              backgroundColor: '#f40',
-              color: 'white',
-              padding: '1rem',
+              color: 'black',
             }}
           >
-            Latest Stories
+            Latest Blog Posts
           </h1>
         </div>
         <section className="section section--gradient">
