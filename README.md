@@ -8,7 +8,7 @@ This is a public repo that contains a [Gatsby](https://www.gatsbyjs.org/) based 
 
 It follows the [JAMstack architecture](https://jamstack.org) by using Git as a single source of truth, and [Netlify](https://www.netlify.com) for continuous deployment, and CDN distribution. Surely you can use a different host. Netlify CMS and Netlify are two different products and not to be confused as one dependent on another. You are free to use both in combination and separately as well.
 
-**Note:** This starter template is a customized version of the original template by Netlify that can be found on [Netlify CMS](https://www.netlifycms.org/) website and uses [Gatsby v2](https://www.gatsbyjs.org/blog/2018-09-17-gatsby-v2/). It is an Open-source project, however, the licence is yet to be decided and hence poeple are discouraged to use it. You can use it for your project ONLY if you are willing to pay the licence fee.
+**Note:** This starter template is a customized version of the original template by Netlify that can be found on [Netlify CMS](https://www.netlifycms.org/) website and uses [Gatsby v2](https://www.gatsbyjs.org/blog/2018-09-17-gatsby-v2/).
 
 Also, this project is not yet finished. Different vulnerabilities may exist and hence usage is production is discouraged. Use at your own risk.
 
@@ -60,7 +60,12 @@ MacOS users might also encounter some errors, for more info check [node-gyp](htt
 
 This plugin uses [gatsby-plugin-purgecss](https://www.gatsbyjs.org/packages/gatsby-plugin-purgecss/) and [bulma](https://bulma.io/). The bulma builds are usually ~170K but reduced 90% by purgecss.
 
-## CONTRIBUTING
+## Contribution
 
 Contributions are always welcome, no matter how large or small. Before contributing,
 please read the [code of conduct](CODE_OF_CONDUCT.md).
+
+
+## License
+
+This repository has MIT license which can be found [here](https://github.com/simarmannsingh/gatsby-netlifycms-starter-template/blob/master/LICENSE).
