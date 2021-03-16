@@ -7,22 +7,21 @@
 @import "~bulma"
 
 // Config vars
-// Kaldi logo brand color: #FD461E
 $kaldi-red: #D64000
 $kaldi-red-invert: #fff
 
 $primary: $kaldi-red
-$primary-invert: $kaldi-red-invert
-$body-color: #333
+// $primary-invert: $kaldi-red-invert
+// $body-color: #333
 $black: #2b2523
-
+  
 //========================================
 // ------------- Utilities ---------------
 //========================================
 .container
   max-width: 1100px;
   margin: 0 auto;
-  overflow: auto;  
+  // overflow: auto;  
   flex-grow: 0
 .flex
   display: flex;
@@ -56,39 +55,6 @@ $black: #2b2523
 
 .card:hover
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-// .btn
-//   display: inline-block;
-//   padding: 10px 30px;
-//   cursor: pointer;
-//   background: var(--primary-color);
-//   color: #fff;
-//   border: none;
-//   border-radius: 5px;
-
-// .btn:hover
-//   transform: scale(.98);
-
-// .btn-outline
-//   background-color: transparent;
-//   border: 1px #fff solid;
-
-// blockquote
-//   position: relative !important
-
-// blockquote::before 
-//   content: url('../img/quote-left-solid.svg') !important
-//   background: #111 !important
-//   width: 1em !important
-//   font-size: 1em
-//   height: 1em !important
-//   position: absolute !important
-//   padding: 7px
-//   justify-content: center
-//   align-items: center
-//   opacity: 0.35
-//   border-radius: 35%
-//   right: 1em
-//   bottom: 1em
 
 .center
   justify-content: center !important
@@ -227,13 +193,14 @@ h1
 .margin-top-0
   margin-top: 0 !important
 
-.navbar-item .icon
-  color: $primary
-// Override for use of svg's from https://simpleicons.org/
+// .navbar-item .icon
+//   color: $primary
+// // Override for use of svg's from https://simpleicons.org/
 .icon svg
   width: 1.5rem
-  height: 1.5rem
+  height: 1.35rem
   fill: currentColor
+
 .navbar-brand .navbar-item.logo
   padding: 0 1rem
 footer.footer
@@ -415,15 +382,7 @@ $menu-label-color: $white-ter
 
 .recent-posts
   color: #848383 !important
-
-.search-box
-  height: 2rem  
-  width: 25vw
-  border-radius: 2em
-  outline: none
-  border: 1px solid #9c9b9b
-  text-align: center
-  
+ 
  
 //========================================
 //------------ responsiveness ------------

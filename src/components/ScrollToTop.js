@@ -20,7 +20,7 @@ const scrollToBlogPost = ( pathname) =>
 {
     if(typeof window !== 'undefined')
     {           
-        if( pathname == '/blog')
+        if( pathname === '/blog')
         {
             window.scrollTo({top:130, behavior:"smooth"})
         }

@@ -11,22 +11,21 @@ export const IndexPageTemplate = ({
 }) => (
   <div>
     <div
-      className="m-3 margin-top-0"    
+      className="margin-top-0"    
     >
       <div className="main-heading" 
       style={{
         display: 'flex', 
         flexDirection: 'column', 
         height: '200px', 
-        margin: '3em', 
         lineHeight: '1', 
-        justifyContent: 'space-around', 
+        justifyContent: 'center', 
         alignItems: 'center'
       }}>
        
         <h1
           className="has-text-weight-bold is-size-3-mobile is-size-2-tablet is-size-1-widescreen" style={{
-            color: 'black',            
+            color: '#363636',            
             lineHeight: '1',
             padding: '0.25em',
             marginTop: '1em'
@@ -37,15 +36,13 @@ export const IndexPageTemplate = ({
         <h3
           className="has-text-weight-bold is-size-5-mobile is-size-5-tablet is-size-4-widescreen"
           style={{            
-            color: 'black',
+            color: '#363636',
             lineHeight: '1',            
             padding: '0.25em',
           }}
         >
           {subheading}
         </h3>
-
-        <input type="text" className="search-box" placeholder="Search something"></input>
 
       </div>
     </div>
