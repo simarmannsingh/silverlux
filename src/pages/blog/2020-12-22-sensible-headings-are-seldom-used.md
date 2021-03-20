@@ -24,6 +24,22 @@ Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque deleniti consequ
 
 Quis excepturi reiciendis beatae pariatur fugiat. Et delectus distinctio reprehenderit quos. Totam voluptas praesentium enim aut maxime eaque repellat nostrum nesciunt necessitatibus, sint ipsum harum deleniti quaerat ullam ea ipsam minima. Eligendi maxime quis atque sed molestiae, esse eos tempora perferendis ex.
 
+```javascript
+// Jsx code in standard codeblock
+const someFunction  = () => {
+    const name = "Jane Doe"
+    const age = 15  
+    
+    return ( 
+        <>
+          <span id="username">Name : {name}</span>
+          <span id="username">Age  : {age}</span>
+        </>
+        );
+  }
+```
+
+
 ## h2 : Sub-heading
 
 Veniam, nobis. Quia saepe iure minus ab facere accusamus adipisci dolorem cupiditate non suscipit praesentium ipsam animi enim dolore ullam nihil omnis deleniti sequi eos sed ex, fugiat nam ipsum architecto. Consequatur quas similique inventore dolorem alias amet dignissimos vero distinctio nobis rem temporibus, qui assumenda et quam doloribus non. Quis excepturi reiciendis beatae pariatur fugiat. Et delectus distinctio reprehenderit quos
