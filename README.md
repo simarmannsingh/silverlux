@@ -15,7 +15,7 @@ A detailed blog post on how you can use this template for your blog (for free ob
 
 ### A Screenshot of the Blog Post.
 
-![Screenshot](https://github.com/simarmannsingh/gatsby-netlifycms-starter-template/blob/master/src/img/gatsbyBasedBlog_blogPost.png)
+![Screenshot](https://github.com/simarmannsingh/gatsby-netlifycms-starter-template/blob/master/src/img/gatsbyBasedBlog_blogPost1.png)
 
 ## Features
 
