@@ -11,7 +11,7 @@ const ScrollToTop  = () => {
   
     
     return ( 
-        <button className="scroll-to-top" id="scrolltotop" onClick={scrollToTop} ></button>
+        <button className="scroll-to-top" aria-label="Scroll To Top" id="scrolltotop" onClick={scrollToTop} ></button>
         );
         
 }

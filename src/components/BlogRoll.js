@@ -47,7 +47,7 @@ class BlogRoll extends React.Component {
                 </header>
                 
                 <p className="blogRollExcerpt flex flex-col-around">
-                  {ClipText(post.excerpt, 50)}                  
+                {ClipText(post.frontmatter.description, 70)}
                 </p>
                 <Link className="btn" to={post.fields.slug}>
                     Keep Reading →
@@ -90,6 +90,7 @@ export default () => (
               frontmatter {
                 title
                 templateKey
+                description
                 date(formatString: "DD MMM, YYYY")
                 featuredpost
                 featuredimage {
