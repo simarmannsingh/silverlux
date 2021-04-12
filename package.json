@@ -1,6 +1,6 @@
 {
-  "name": "gatsby-netlifycms-blog-web-app",
-  "description": "Gatsby Netlify CMS modern blog web-app",
+  "name": "gatsby-netlifycms-modernblog",
+  "description": "Gatsby Netlify CMS modern blog",
   "version": "1.2.0",
   "author": "Simar Mann Singh",
   "dependencies": {
