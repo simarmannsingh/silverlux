@@ -1,27 +1,30 @@
 # Gatsby Netlify CMS Starter Template
 
 <div align="center" style="margin-bottom:30px">
-<a href="https://twitter.com/intent/tweet?text=A%20Modern%20Gatsby%20andNetlifyCMS%20based%20starter%20template%3A&url=https%3A%2F%2Fgithub.com%2Fsimarmannsingh%2Fgatsby-netlifycms-starter-template">
-<img alt="Twitter URL" src="https://img.shields.io/twitter/url?style=social&url=https%3A%2F%2Fgithub.com%2Fsimarmannsingh%2Fgatsby-netlifycms-starter-template">
-</a>
-
+    
 [![Netlify Status](https://api.netlify.com/api/v1/badges/b654c94e-08a6-4b79-b443-7837581b1d8d/deploy-status)](https://app.netlify.com/sites/gatsby-starter-netlify-cms-ci/deploys)
 [![Contributor Covenant](https://img.shields.io/badge/Contributor%20Covenant-2.0-4baaaa.svg)](code_of_conduct.md)
+    <a href="https://twitter.com/intent/tweet?text=A%20Modern%20Gatsby%20andNetlifyCMS%20based%20starter%20template%3A&url=https%3A%2F%2Fgithub.com%2Fsimarmannsingh%2Fgatsby-netlifycms-starter-template">
+<img alt="Twitter URL" src="https://img.shields.io/twitter/url?style=social&url=https%3A%2F%2Fgithub.com%2Fsimarmannsingh%2Fgatsby-netlifycms-starter-template">
+</a>
 </div>
 
 <div align="center"  style="margin-bottom:30px">
-    <img src="src/img/gnm.svg" alt="Logo" width='400px'/>
+    <img src="src/img/gnm.svg" alt="Logo" />
 </div>
+
 
 --------------------------------------------------------------------
 
 [**LIVE DEMO**](https://gatsby-netlifycms-modern-template.netlify.app/)
 
-![Screenshot](https://github.com/simarmannsingh/gatsby-netlifycms-starter-template/blob/master/src/img/gatsbyBasedBlog1.png)
-
-A fully-responsive [Gatsby](https://www.gatsbyjs.org/) based template web-app which can be easily hosted on any platform. This web-app uses the [Netlify CMS](https://www.netlifycms.org) as its content management system.
+A fully-responsive [Gatsby](https://www.gatsbyjs.org/) based web-app template which can be easily hosted on any platform. This web-app uses the [Netlify CMS](https://www.netlifycms.org) as its content management system.
 
 It follows the [JAMstack architecture](https://jamstack.org) by using Git as a single source of truth, and [Netlify](https://www.netlify.com) for continuous deployment, and CDN distribution. Surely you can use a different host. Netlify CMS and Netlify are two different products and not to be confused as one dependent on another. You are free to use both in combination and separately as well.
+
+<div align="center"  style="margin-bottom:30px">
+    <img src="src/img/gatsbyBasedBlog1.png" alt="screenshot"/>
+</div>
 
 A detailed blog post on how you can use this template for your blog (for free obviously) can be found [**here**](https://simarmannsingh.com/blog/2021-04-22-how-to-create-your-personal-blog-for-free)
 
@@ -30,15 +33,19 @@ A detailed blog post on how you can use this template for your blog (for free ob
 
 There are two ways you can use this template 
 
-1. First one is to use the button below and it'll automatically take you to the netlify and ask you to create a repository on your behalf in Github/Gitlab/Bitbucket as per you select. This is the recommended approach as it automatically takes care of all the process steps. You don't need to do anything else.
+1. First Approach(**Recommended**)
+   Use the button below and it'll automatically take you to the netlify and ask you to create a repository on your behalf in Github/Gitlab/Bitbucket as per you select. This is the recommended approach as it automatically takes care of all the process steps. You don't need to do anything else.
 
    <a href="https://app.netlify.com/start/deploy?repository=https://github.com/simarmannsingh/gatsby-netlifycms-starter-template&amp;stack=cms"><img src="https://www.netlify.com/img/deploy/button.svg" alt="Deploy to Netlify"></a>
 
-2. Second approach is to do it manually. It requires you to clone/fork this repository in your Github account, and setup the development environment in your system, install all the dependencies and then setup netlify account to pull the github published code for deployment. This approach is for advanced users as it allows users to edit the code and tweak the code as per preferences and it requires knowledge of code, development environment, deployment etc.  
+2. Second Approach
+   Do it manually. It requires you to clone/fork this repository in your Github account, and setup the development environment in your system, install all the dependencies and then setup netlify account to pull the github published code for deployment. This approach is for advanced users as it allows users to edit the code and tweak the code as per preferences and it requires knowledge of code, development environment, deployment etc.  
 
 ### A Screenshot of the Blog Post.
 
-![Screenshot](https://github.com/simarmannsingh/gatsby-netlifycms-starter-template/blob/master/src/img/gatsbyBasedBlog_blogPost1.png)
+<div align="center"  style="margin-bottom:30px">
+    <img src="src/img/gatsbyBasedBlog_blogPost1.png" alt="blog post screenshot"/>
+</div>
 
 ## Features
 
