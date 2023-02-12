@@ -1,4 +1,4 @@
-# Gatsby Netlify CMS Starter Template
+# Gatsby Netlify CMS Modern blog
 
 <div align="center" style="margin-bottom:30px">
     

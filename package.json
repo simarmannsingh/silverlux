@@ -3,6 +3,7 @@
   "description": "Gatsby Netlify CMS modern blog",
   "version": "1.2.0",
   "author": "Simar Mann Singh",
+  "license": "MIT",
   "dependencies": {
     "@deckdeckgo/highlight-code": "^3.3.1",
     "bulma": "^0.9.0",
