@@ -5,6 +5,7 @@ import { Helmet } from 'react-helmet'
 import { graphql, Link } from 'gatsby'
 import Layout from '../components/Layout'
 import Content, { HTMLContent } from '../components/Content'
+import { Disqus } from 'gatsby-plugin-disqus';
 
 export const BlogPostTemplate = ({
   image,
@@ -15,15 +16,22 @@ export const BlogPostTemplate = ({
   date,
   title,
   helmet,
+  post
 }) => {
   const PostContent = contentComponent || Content
   let PostImage = null;
   if(image !== undefined)
   {
     PostImage = image.childImageSharp.fluid.src
-    console.log(PostImage);
   }
   scrollToBlog()
+
+  const disqusConfig = {
+    identifier: post.id,
+    title: post.frontmatter.title,
+    url: process.env.BASE_URL + post.fields.slug
+  }
+
   return (
     <section>
       {helmet || ''}
@@ -60,6 +68,8 @@ export const BlogPostTemplate = ({
                   </ul>
                 </div>
               ) : null}
+
+              <Disqus config={{disqusConfig}} />
 
             </div>
           </div>
@@ -108,6 +118,7 @@ const BlogPost = ({ data }) => {
         }
         tags={post.frontmatter.tags}
         title={post.frontmatter.title}
+        post={post}
       />
     </Layout>
   )
@@ -126,6 +137,9 @@ export const pageQuery = graphql`
     markdownRemark(id: { eq: $id }) {
       id
       html
+      fields {
+        slug
+      }
       frontmatter {
         date(formatString: "DD MMM, YYYY")
         title

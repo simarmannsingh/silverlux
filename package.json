@@ -9,6 +9,7 @@
     "bulma": "^0.9.0",
     "gatsby": "^2.20.35",
     "gatsby-image": "^2.3.5",
+    "gatsby-plugin-disqus": "^1.2.4",
     "gatsby-plugin-netlify": "^2.2.4",
     "gatsby-plugin-netlify-cms": "^4.2.5",
     "gatsby-plugin-purgecss": "^5.0.0",
@@ -43,7 +44,7 @@
   ],
   "main": "n/a",
   "scripts": {
-    "clean": "gatsby clean",
+    "clean": "gatsby clean && gatsby telemetry --disable",
     "start": "npm run develop",
     "build": "npm run clean && gatsby build",
     "develop": "npm run clean && gatsby develop",

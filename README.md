@@ -60,6 +60,17 @@ There are two ways you can use this template
 - Uses `gatsby-image` with Netlify-CMS preview support
 - Separate components for everything
 - Perfect score on Lighthouse for SEO, Accessibility and Performance
+- Comment and Like functionality [**new**]
+
+## Update : Comment functionality added
+For ease of access, the comment functionality provided by Disqus, has been added.<br/>
+However, slight configure is required to make it fully functional.
+
+1. Register your website on the disqus platform, you'll get a shortname
+2. Update the shortname assigned to the Environment variable `DISQUS_SHORTNAME` [here](/src/.env). Save it
+3. If deploying on services like Heroku (free tier is over, it is paid not, but you're rich ? :p), make sure to add this environment variable to the service as well.
+
+A detailed blog post on how to configure the Disqus plugin can be found [here](https://simarmannsingh.com/blog/2022-02-25-setup-comment-functionality-for-your-gatsby-based-blog/)
 
 ## Prerequisites for the development environment
 
@@ -98,8 +109,6 @@ please read the [code of conduct](CODE_OF_CONDUCT.md).
 
 ## Upcoming Features in Next version (TODO)
 - Dark Theme
-- Comment functionality
-- Likes functionality
 
 ## License
 
