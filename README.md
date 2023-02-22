@@ -2,8 +2,9 @@
 
 <div align="center" style="margin-bottom:30px">
     
-[![Netlify Status](https://api.netlify.com/api/v1/badges/b654c94e-08a6-4b79-b443-7837581b1d8d/deploy-status)](https://app.netlify.com/sites/gatsby-starter-netlify-cms-ci/deploys)
+[![Version](https://img.shields.io/badge/version-v1.3-yellowgreen)]()
 [![Contributor Covenant](https://img.shields.io/badge/Contributor%20Covenant-2.0-4baaaa.svg)](code_of_conduct.md)
+[![Netlify Status](https://api.netlify.com/api/v1/badges/b654c94e-08a6-4b79-b443-7837581b1d8d/deploy-status)](https://app.netlify.com/sites/gatsby-starter-netlify-cms-ci/deploys)
     <a href="https://twitter.com/intent/tweet?text=A%20Modern%20Gatsby%20andNetlifyCMS%20based%20starter%20template%3A&url=https%3A%2F%2Fgithub.com%2Fsimarmannsingh%2Fgatsby-netlifycms-starter-template">
 <img alt="Twitter URL" src="https://img.shields.io/twitter/url?style=social&url=https%3A%2F%2Fgithub.com%2Fsimarmannsingh%2Fgatsby-netlifycms-starter-template">
 </a>
@@ -22,10 +23,6 @@ A fully-responsive [Gatsby](https://www.gatsbyjs.org/) based web-app template wh
 
 It follows the [JAMstack architecture](https://jamstack.org) by using Git as a single source of truth, and [Netlify](https://www.netlify.com) for continuous deployment, and CDN distribution. Surely you can use a different host. Netlify CMS and Netlify are two different products and not to be confused as one dependent on another. You are free to use both in combination and separately as well.
 
-<div align="center"  style="margin-bottom:30px">
-    <img src="src/img/gatsbyBasedBlog1.png" alt="screenshot"/>
-</div>
-
 A detailed blog post on how you can use this template for your blog (for free obviously) can be found [**here**](https://simarmannsingh.com/blog/2021-04-22-how-to-create-your-personal-blog-for-free)
 
 
@@ -41,12 +38,6 @@ There are two ways you can use this template
 2. Second Approach
    Do it manually. It requires you to clone/fork this repository in your Github account, and setup the development environment in your system, install all the dependencies and then setup netlify account to pull the github published code for deployment. This approach is for advanced users as it allows users to edit the code and tweak the code as per preferences and it requires knowledge of code, development environment, deployment etc.  
 
-### A Screenshot of the Blog Post.
-
-<div align="center"  style="margin-bottom:30px">
-    <img src="src/img/gatsbyBasedBlog_blogPost1.png" alt="blog post screenshot"/>
-</div>
-
 ## Features
 
 - A simple blogging web-app built with Netlify CMS
@@ -60,7 +51,10 @@ There are two ways you can use this template
 - Uses `gatsby-image` with Netlify-CMS preview support
 - Separate components for everything
 - Perfect score on Lighthouse for SEO, Accessibility and Performance
-- Comment and Like functionality [**new**]
+
+## New Features in v1.3 
+- Comment and Like functionality
+- Cookie Consent
 
 ## Update : Comment functionality added
 For ease of access, the comment functionality provided by Disqus, has been added.<br/>
@@ -106,8 +100,22 @@ This plugin uses [gatsby-plugin-purgecss](https://www.gatsbyjs.org/packages/gats
 Contributions are always welcome, no matter how large or small. Before contributing,
 please read the [code of conduct](CODE_OF_CONDUCT.md).
 
+### A Screenshot of the Blog Post.
 
-## Upcoming Features in Next version (TODO)
+### Main Page
+<div align="center"  style="margin-bottom:30px">
+    <img src="src/img/gatsbyBasedBlog1.png" alt="screenshot"/>
+</div>
+
+### Blog Post
+
+Update: The blog post now also features comment section and Cookie Consent.
+
+<div align="center"  style="margin-bottom:30px">
+    <img src="src/img/gatsbyBasedBlog_blogPost1.png" alt="blog post screenshot"/>
+</div>
+
+## Upcoming Features in Next versions (TODO)
 - Dark Theme
 
 ## License

@@ -5,6 +5,7 @@ import { Helmet } from 'react-helmet'
 import { graphql, Link } from 'gatsby'
 import Layout from '../components/Layout'
 import Content, { HTMLContent } from '../components/Content'
+import CookieConsent from '../components/CookieConsent';
 import { Disqus } from 'gatsby-plugin-disqus';
 
 export const BlogPostTemplate = ({
@@ -69,6 +70,7 @@ export const BlogPostTemplate = ({
                 </div>
               ) : null}
 
+              <CookieConsent/>
               <Disqus config={{disqusConfig}} />
 
             </div>
@@ -146,7 +148,7 @@ export const pageQuery = graphql`
         description
         featuredimage{
           childImageSharp {
-            fluid(maxWidth: 1280, quality: 100) {
+            fluid(maxWidth: 1024, quality: 100) {
               ...GatsbyImageSharpFluid
             }
             id : id
