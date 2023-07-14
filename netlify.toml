@@ -1,8 +1,8 @@
 [build]
   publish = "public"
-  command = "npm run build"
+  command = "yarn build"
   functions = "lambda"
 [build.environment]
-  NODE_VERSION = "12.22.3"
-  YARN_VERSION = "1.22.4"
+  NODE_VERSION = "14.20.0"
+  YARN_VERSION = "1.22"
   YARN_FLAGS = "--no-ignore-optional"

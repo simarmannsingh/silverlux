@@ -21,16 +21,24 @@ export const BlogPostTemplate = ({
 }) => {
   const PostContent = contentComponent || Content
   let PostImage = null;
+  let disqusConfig = null;
   if(image !== undefined)
   {
-    PostImage = image.childImageSharp.fluid.src
+    if (image.childImageSharp !== undefined) {
+      PostImage = image.childImageSharp.fluid.src
+    }
+    else if (image.props !== undefined) {
+      PostImage = image.props.value
+    }
   }
   scrollToBlog()
 
-  const disqusConfig = {
-    identifier: post.id,
-    title: post.frontmatter.title,
-    url: process.env.BASE_URL + post.fields.slug
+  if (post !== undefined) {
+    disqusConfig = {
+      identifier: post.id,
+      title: post.frontmatter.title,
+      url: process.env.BASE_URL + post.fields.slug
+    }
   }
 
   return (
@@ -71,7 +79,8 @@ export const BlogPostTemplate = ({
               ) : null}
 
               <CookieConsent/>
-              <Disqus config={{disqusConfig}} />
+              
+              {(disqusConfig != null) &&  (<Disqus config={{disqusConfig}} />)}
 
             </div>
           </div>

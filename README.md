@@ -73,6 +73,38 @@ For local development, you need
 - [Gatsby CLI](https://www.gatsbyjs.org/docs/)
 - [Netlify CLI](https://github.com/netlify/cli)
 
+## Running Locally
+
+To run or test the changes locally, simply follow these steps.
+ - Use the right version of node, if you use nvm
+    ```sh
+    nvm use 14.20
+    ``` 
+
+    If you don't use nvm to manage the Node version in use, oh boy,..phew!
+
+ - Install all the dependencies using
+   ```sh
+   yarn install
+   ```
+
+ -  After installing the dependencies, simply start for development mode
+    ```sh
+    yarn start
+    ```
+
+ -  You can also create a production build for manual deployment using
+    ```sh
+    yarn build
+    ```
+
+Note: You can use Netlify CMS locally, just open another terminal and run the following command
+```sh
+npx netlify-cms-proxy-server
+```
+
+and start run `gatsby develop`.
+
 ### Setting up the CMS
 
 Follow the [Netlify CMS Quick Start Guide](https://www.netlifycms.org/docs/quick-start/#authentication) to set up authentication, and hosting. You would need to enable Identity in the Netlify account if you are using Netlify for website deployment.

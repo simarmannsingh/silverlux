@@ -12,6 +12,9 @@ media_folder: static/img
 public_folder: /img
 publish_mode: editorial_workflow
 
+# Uncomment local_backend when you need to develop in your local
+local_backend: true # run `npx netlify-cms-proxy-server` for local testing
+
 collections:
   - name: "blog"
     label: "Blog"
