@@ -22,12 +22,16 @@ class BlogRoll extends React.Component {
                   
                   {post.frontmatter.featuredimage ? (
                     <div className="featured-thumbnail">
+                      <Link
+                        to={post.fields.slug}
+                      >
                       <PreviewCompatibleImage
                         imageInfo={{
                           image: post.frontmatter.featuredimage,
                           alt: `featured image thumbnail for post ${post.frontmatter.title}`,
                         }}
                       />
+                      </Link>
                     </div>
                   ) : null}
 
