@@ -22,6 +22,8 @@ export const BlogPostTemplate = ({
   const PostContent = contentComponent || Content
   let PostImage = null;
   let disqusConfig = null;
+  let isPreviewMode = true;
+  let slug = null;
   if(image !== undefined)
   {
     if (image.childImageSharp !== undefined) {
@@ -39,6 +41,11 @@ export const BlogPostTemplate = ({
       title: post.frontmatter.title,
       url: process.env.BASE_URL + post.fields.slug
     }
+    slug = post.fields.slug;
+  }
+  
+  if (slug != null && !slug.includes('admin')){
+    isPreviewMode = false
   }
 
   return (
@@ -78,7 +85,7 @@ export const BlogPostTemplate = ({
                 </div>
               ) : null}
 
-              <CookieConsent/>
+              {(!isPreviewMode && <CookieConsent/> )}
               
               {(disqusConfig != null) &&  (<Disqus config={{disqusConfig}} />)}
 
