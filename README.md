@@ -2,7 +2,7 @@
 
 <div align="center" style="margin-bottom:30px">
     
-[![Version](https://img.shields.io/badge/version-v1.3-yellowgreen)]()
+[![Version](https://img.shields.io/badge/version-v1.4-yellowgreen)]()
 [![Contributor Covenant](https://img.shields.io/badge/Contributor%20Covenant-2.0-4baaaa.svg)](code_of_conduct.md)
 [![Netlify Status](https://api.netlify.com/api/v1/badges/b654c94e-08a6-4b79-b443-7837581b1d8d/deploy-status)](https://app.netlify.com/sites/gatsby-starter-netlify-cms-ci/deploys)
     <a href="https://twitter.com/intent/tweet?text=A%20Modern%20Gatsby%20andNetlifyCMS%20based%20starter%20template%3A&url=https%3A%2F%2Fgithub.com%2Fsimarmannsingh%2Fgatsby-netlifycms-starter-template">
@@ -51,18 +51,18 @@ There are two ways you can use this template
 - Uses `gatsby-image` with Netlify-CMS preview support
 - Separate components for everything
 - Perfect score on Lighthouse for SEO, Accessibility and Performance
-
-## New Features in v1.3 
 - Comment and Like functionality
 - Cookie Consent
 
-## Update : Comment functionality added
+## New Features in v1.4
+- Full text Search functionality powered by Fuse.js
+## Customization required for Comment functionality
 For ease of access, the comment functionality provided by Disqus, has been added.<br/>
 However, slight configure is required to make it fully functional.
 
 1. Register your website on the disqus platform, you'll get a shortname
 2. Update the shortname assigned to the Environment variable `DISQUS_SHORTNAME` [here](/src/.env). Save it
-3. If deploying on services like Heroku (free tier is over, it is paid not, but you're rich ? :p), make sure to add this environment variable to the service as well.
+3. If deploying on services like Heroku (free tier is over, it is paid now, but you're rich ? :p), make sure to add this environment variable to the service as well.
 
 A detailed blog post on how to configure the Disqus plugin can be found [here](https://simarmannsingh.com/blog/2022-02-25-setup-comment-functionality-for-your-gatsby-based-blog/)
 
@@ -132,7 +132,8 @@ This plugin uses [gatsby-plugin-purgecss](https://www.gatsbyjs.org/packages/gats
 Contributions are always welcome, no matter how large or small. Before contributing,
 please read the [code of conduct](CODE_OF_CONDUCT.md).
 
-### A Screenshot of the Blog Post.
+### A Screenshot of the Blog Post. [Old]
+**Disclaimer**: _Screenshots are old. I'm too lazy to take fresh screenshots again._
 
 ### Main Page
 <div align="center"  style="margin-bottom:30px">

@@ -1,12 +1,13 @@
 {
   "name": "gatsby-netlifycms-modernblog",
   "description": "Gatsby Netlify CMS modern blog",
-  "version": "1.3.0",
+  "version": "1.4.0",
   "author": "Simar Mann Singh",
   "license": "MIT",
   "dependencies": {
     "@deckdeckgo/highlight-code": "^3.3.1",
     "bulma": "^0.9.0",
+    "fuse.js": "^6.6.2",
     "gatsby": "^2.20.35",
     "gatsby-image": "^2.3.5",
     "gatsby-plugin-disqus": "^1.2.4",

@@ -295,6 +295,34 @@ $menu-label-color: $white-ter
 
 .blogPostAuthor, .blogPostDate
   text-decoration: underline !important
+.search-list-container
+  width: 100vw
+  display: flex
+  flex-direction: column
+  position: absolute
+  margin-top: 1em
+  z-index: 100
+.search-input,
+.search-list,
+  width: 20%
+  margin: 0 auto
+.search-input
+  padding: 10px
+  border-radius: 2em
+  border: 1px solid grey
+  z-index: 110
+.search-list
+  padding-top: 2em
+  margin-top: -2em
+  z-index: 105
+
+.search-list-item > a
+  background: #f2efeb
+  display: block
+  font-size: 0.9em
+  padding: 10px
+  margin: 5px
+  border-radius: 1em
 
 .scroll-to-top::before
   content: url('../img/chevron-up-solid.svg')
@@ -403,6 +431,9 @@ $menu-label-color: $white-ter
     font-size: 0.85em !important
   .blogPostContentsContainer
     width: 65vw !important
+  .search-input,
+  .search-list
+    width: 40%
 @media (max-width: 500px)
   .main-heading
     margin: 0 !important
@@ -428,3 +459,6 @@ $menu-label-color: $white-ter
   .blogPostContentsContainer
     width: 75vw !important
     text-align: justify
+  .search-input,
+  .search-list
+    width: 70%
