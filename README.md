@@ -1,23 +1,25 @@
-# Gatsby Netlify CMS Modern blog
+# Silverlux
 
 <div align="center" style="margin-bottom:30px">
     
 [![Version](https://img.shields.io/badge/version-v1.4-yellowgreen)]()
 [![Contributor Covenant](https://img.shields.io/badge/Contributor%20Covenant-2.0-4baaaa.svg)](code_of_conduct.md)
-[![Netlify Status](https://api.netlify.com/api/v1/badges/b654c94e-08a6-4b79-b443-7837581b1d8d/deploy-status)](https://app.netlify.com/sites/gatsby-starter-netlify-cms-ci/deploys)
-    <a href="https://twitter.com/intent/tweet?text=A%20Modern%20Gatsby%20andNetlifyCMS%20based%20starter%20template%3A&url=https%3A%2F%2Fgithub.com%2Fsimarmannsingh%2Fgatsby-netlifycms-starter-template">
-<img alt="Twitter URL" src="https://img.shields.io/twitter/url?style=social&url=https%3A%2F%2Fgithub.com%2Fsimarmannsingh%2Fgatsby-netlifycms-starter-template">
+[![Netlify Status](https://api.netlify.com/api/v1/badges/f2d7cd51-5e77-45c1-9f57-a760980affb3/deploy-status)](https://app.netlify.com/sites/silverlux/deploys)
+<a href="https://twitter.com/intent/tweet?text=Silverlux:%20A%20Modern%20Gatsby%20andNetlifyCMS%20based%20starter%20template%3A&url=https%3A%2F%2Fgithub.com%2Fsimarmannsingh%2Fsilverlux">
+<img alt="Twitter URL" src="https://img.shields.io/twitter/url?style=social&url=https%3A%2F%2Fgithub.com%2Fsimarmannsingh%2Fsilverlux">
 </a>
 </div>
 
 <div align="center"  style="margin-bottom:30px">
-    <img src="src/img/gnm.svg" alt="Logo" />
+    <img src="src/img/silverlux.webp" alt="Logo" />
 </div>
 
 
 --------------------------------------------------------------------
 
 [**LIVE DEMO**](https://gatsby-netlifycms-modern-template.netlify.app/)
+
+NOTE: Identity update - `Gatsby-netlifycms-starter-template` is now **`Silverlux`**
 
 A fully-responsive [Gatsby](https://www.gatsbyjs.org/) based web-app template which can be easily hosted on any platform. This web-app uses the [Netlify CMS](https://www.netlifycms.org) as its content management system.
 
@@ -33,7 +35,7 @@ There are two ways you can use this template
 1. First Approach(**Recommended**)
    Use the button below and it'll automatically take you to the netlify and ask you to create a repository on your behalf in Github/Gitlab/Bitbucket as per you select. This is the recommended approach as it automatically takes care of all the process steps. You don't need to do anything else.
 
-   <a href="https://app.netlify.com/start/deploy?repository=https://github.com/simarmannsingh/gatsby-netlifycms-starter-template&amp;stack=cms"><img src="https://www.netlify.com/img/deploy/button.svg" alt="Deploy to Netlify"></a>
+   <a href="https://app.netlify.com/start/deploy?repository=https://github.com/simarmannsingh/silverlux&amp;stack=cms"><img src="https://www.netlify.com/img/deploy/button.svg" alt="Deploy to Netlify"></a>
 
 2. Second Approach
    Do it manually. It requires you to clone/fork this repository in your Github account, and setup the development environment in your system, install all the dependencies and then setup netlify account to pull the github published code for deployment. This approach is for advanced users as it allows users to edit the code and tweak the code as per preferences and it requires knowledge of code, development environment, deployment etc.  
@@ -61,7 +63,7 @@ For ease of access, the comment functionality provided by Disqus, has been added
 However, slight configure is required to make it fully functional.
 
 1. Register your website on the disqus platform, you'll get a shortname
-2. Update the shortname assigned to the Environment variable `DISQUS_SHORTNAME` [here](/src/.env). Save it
+2. Update the shortname assigned to the Environment variable `DISQUS_SHORTNAME` [here](/.env). Save it
 3. If deploying on services like Heroku (free tier is over, it is paid now, but you're rich ? :p), make sure to add this environment variable to the service as well.
 
 A detailed blog post on how to configure the Disqus plugin can be found [here](https://simarmannsingh.com/blog/2022-02-25-setup-comment-functionality-for-your-gatsby-based-blog/)
@@ -153,4 +155,4 @@ Update: The blog post now also features comment section and Cookie Consent.
 
 ## License
 
-This repository has MIT license which can be found [here](https://github.com/simarmannsingh/gatsby-netlifycms-starter-template/blob/master/LICENSE).
+This repository has MIT license which can be found [here](https://github.com/simarmannsingh/silverlux/blob/master/LICENSE).
