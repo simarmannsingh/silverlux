@@ -17,7 +17,7 @@
 
 --------------------------------------------------------------------
 
-[**LIVE DEMO**](https://gatsby-netlifycms-modern-template.netlify.app/)
+[**LIVE DEMO**](https://silverlux.netlify.app/)
 
 NOTE: Identity update - `Gatsby-netlifycms-starter-template` is now **`Silverlux`**
 
