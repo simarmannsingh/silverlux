@@ -10,7 +10,7 @@ const SearchComponent = () => {
     
     const data = useStaticQuery(graphql`
     {
-      allMarkdownRemark (limit: 10) {
+      allMarkdownRemark {
         nodes {
           id
           frontmatter {

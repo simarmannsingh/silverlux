@@ -301,6 +301,8 @@ $menu-label-color: $white-ter
   flex-direction: column
   position: absolute
   margin-top: 1em
+  backdrop-filter: blur(10px)
+  -webkit-backdrop-filter: blur(10px)
   z-index: 100
 .search-input,
 .search-list,
@@ -315,6 +317,11 @@ $menu-label-color: $white-ter
   padding-top: 2em
   margin-top: -2em
   z-index: 105
+
+.search-list-item
+  display: flex
+  justify-content: space-between
+  align-items: center
 
 .search-list-item > a
   background: #f2efeb
